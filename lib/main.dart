@@ -1,11 +1,19 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+class Player {
+  String? name;
+  //데이터타입에 ?가 있으면 있을수도 없을수도 있다는 것
+  Player({required this.name});
+}
+
 //위젯들을 레고블럭 처럼 합쳐서 앱을 만들어냄
 //위젯들을 다 외울 필요는 없음
 void main() {
   //처음 시작되는 App이라는 위젯이 root이다.
   //앱의 root는 material or IOS 디자인을 사용할지결정을 해야한다.
+  var nico = Player(name: "potato");
+  nico.name;
   runApp(App());
 }
 
